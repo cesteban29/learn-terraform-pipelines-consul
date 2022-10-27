@@ -1,11 +1,4 @@
 terraform {
-  backend "remote" {
-    organization = "hashicorp-learn"
-
-    workspaces {
-      name = "learn-terraform-pipelines-consul"
-    }
-  }
   required_providers {
     helm = {
       source  = "hashicorp/helm"
